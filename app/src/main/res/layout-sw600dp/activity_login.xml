@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical"
+    tools:context=".gui.login.Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/newlogo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_textstyle"
+            android:fontFamily="@font/flat"
+            android:hint="@string/userNamehint"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:paddingRight="5dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/passEt"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_textstyle"
+            android:fontFamily="@font/flat"
+            android:gravity="end"
+            android:hint="@string/passwordhint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:paddingRight="5dp"
+            android:textSize="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/forgetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="150dp"
+            android:fontFamily="@font/flat"
+            android:text="@string/passText"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/lognBtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/logn_stylebtn"
+            android:fontFamily="@font/flat"
+            android:text="@string/تسجيل_الدخول"
+            android:textColor="@color/whitePrimer"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

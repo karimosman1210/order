@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.basket.CartFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:weightSum="100">
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/cartRecycler"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_marginBottom="15dp"
+          android:layout_weight="100" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:orientation="horizontal"
+          android:weightSum="100">
+
+         <TextView
+             android:id="@+id/totalAmountCart"
+             android:layout_width="150dp"
+             android:layout_height="55dp"
+             android:background="@drawable/total_amount_style"
+             android:gravity="center"
+             android:textSize="22sp"
+             android:textColor="@color/darkwhite" />
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="100"
+             android:gravity="center">
+
+            <Button
+                android:id="@+id/checkOutBtn"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="33dp"
+                android:background="@drawable/logn_stylebtn"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:text="تأكيد الشراء"
+                android:textSize="22sp"
+                android:textColor="@color/darkwhite" />
+         </LinearLayout>
+      </LinearLayout>
+   </LinearLayout>
+
+</FrameLayout>

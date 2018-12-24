@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".gui.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="89">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="500dp"
+                android:layout_height="350dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="23dp"
+                    android:background="@drawable/card_style2">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/changePassLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/flat"
+                            android:gravity="center"
+                            android:text="@string/OldPassword"
+                            android:textSize="25sp" />
+
+                        <EditText
+                            android:layout_width="300dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/changepass"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/blacColor"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/flat"
+                            android:gravity="center"
+                            android:text="@string/newPassword"
+                            android:textSize="25sp" />
+
+                        <EditText
+                            android:layout_width="300dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/changepass"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/blacColor"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/flat"
+                            android:gravity="center"
+                            android:text="@string/ConfermPassword"
+                            android:textSize="23sp" />
+
+                        <EditText
+                            android:layout_width="300dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/changepass"
+                            android:inputType="phone"
+                            android:paddingLeft="8dp"
+                            android:textColor="@color/blacColor"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgeProfileEdit"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/profile_ph" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/infoProfilePerson"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="@font/flat"
+                                    android:gravity="center"
+                                    android:text="@string/الاسم"
+                                    android:textSize="25sp" />
+
+                                <TextView
+                                    android:id="@+id/nameTv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="@font/flat"
+                                    android:gravity="center"
+                                    android:text="كريم احمد"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="23sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="@font/flat"
+                                    android:gravity="center"
+                                    android:text="@string/email"
+                                    android:textSize="25sp" />
+
+
+                                <TextView
+                                    android:id="@+id/emailIdTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="@font/flat"
+                                    android:gravity="center"
+
+                                    android:text="karimosman1210@gmail.com"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="23sp" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="@font/flat"
+                                    android:gravity="center"
+                                    android:text="@string/phoneNumber"
+                                    android:textSize="23sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="@font/flat"
+                                    android:gravity="center"
+                                    android:id="@+id/phoneNumberTv"
+                                    android:text="(+2) 01023431387"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="23sp" />
+
+
+
+                            </LinearLayout>
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/editProfileInfo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:fontFamily="@font/flat"
+                                        android:gravity="center"
+                                        android:text="@string/name"
+                                        android:textSize="25sp" />
+
+                                    <EditText
+                                        android:layout_width="350dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/changepass"
+                                        android:fontFamily="@font/flat"
+                                        android:gravity="center"
+                                        android:text="كريم احمد"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="23sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:fontFamily="@font/flat"
+                                        android:gravity="center"
+                                        android:text="@string/email"
+                                        android:textSize="25sp" />
+
+                                    <EditText
+                                        android:layout_width="350dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/changepass"
+                                        android:gravity="center"
+                                        android:inputType="textEmailAddress"
+                                        android:text="karimosman1210@gmail.com"
+
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="23sp"
+
+                                        />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:fontFamily="@font/flat"
+                                        android:gravity="center"
+                                        android:text="@string/phoneNumber"
+                                        android:textSize="25sp" />
+
+                                    <EditText
+                                        android:layout_width="350dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/changepass"
+                                        android:gravity="center"
+                                        android:inputType="textEmailAddress"
+                                        android:text="(+2) 01023431387"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="23sp" />
+
+
+                                </LinearLayout>
+
+                            </ScrollView>
+
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/chanePassBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/changepass"
+                    android:fontFamily="@font/flat"
+                    android:text="@string/changePass"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="23sp" />
+
+                <Button
+                    android:id="@+id/editProfile"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/logn_stylebtn"
+                    android:fontFamily="@font/flat"
+                    android:text="@string/updatedata"
+                    android:textColor="@color/darkwhite"
+                    android:textSize="23sp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveEditProfile"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/logn_stylebtn"
+                android:text="@string/saveChange"
+                android:textColor="@color/darkwhite"
+                android:textSize="23sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/savechangePassBtn"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/logn_stylebtn"
+                android:text="@string/editPass"
+                android:textColor="@color/darkwhite"
+                android:textSize="23sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

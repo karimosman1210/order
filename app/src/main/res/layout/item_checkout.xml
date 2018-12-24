@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_weight="100"
+    android:background="@drawable/card_style2"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="100">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textColor="@color/blacColor"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/dateCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:text="@string/total"
+                android:textColor="@color/blacColor"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/totalPriceCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:text="@string/amount"
+                android:textColor="@color/blacColor"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/amountCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:text="@string/company"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/companyNameCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/barcodeCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/descriptionCard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/flat"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+        <ImageView
+            android:id="@+id/imageItem"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/card_style"
+            android:padding="1dp"
+            android:scaleType="fitXY" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/prgressOrder"/>
+
+        </FrameLayout>
+</LinearLayout>

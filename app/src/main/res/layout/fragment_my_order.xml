@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".gui.history.MyOrderFragment">
+
+    <ImageView
+        android:id="@+id/emptyImge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/nodata"
+        android:visibility="gone" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/historyProgress"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:SpinKit_Color="@color/colorAccent"
+        app:SpinKit_Style="Circle" />
+
+    <LinearLayout
+        android:id="@+id/historyLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/item"
+            android:visibility="gone"
+            android:weightSum="100">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="31.8">
+
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/itemSearchOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layoutDirection="rtl"></android.support.v7.widget.SearchView>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.2"
+                android:background="#939393" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/priceSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="0.5dp"
+                android:layout_weight="29"
+                android:fontFamily="@font/flat"
+                android:hint="@string/Byproduct"
+                android:textSize="11sp" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/companySPinner2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="0.5dp"
+                android:layout_weight="29"
+                android:fontFamily="@font/flat"
+                android:hint="@string/byDate"
+                android:textSize="11sp" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/ripple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_weight="10"
+                android:paddingLeft="4dp"
+                app:mrl_rippleColor="@color/colorAccent">
+
+                <TextView
+                    android:id="@+id/allTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/flat"
+                    android:gravity="center"
+                    android:text="@string/الكل"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/contact_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myorderRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red"
+    android:layout_gravity="bottom"
+    android:text="@string/no_Internet_Tryagain"
+    android:textColor="@color/darkwhite"
+    android:gravity="center"
+    android:textSize="17sp"
+    android:fontFamily="@font/flat"
+    android:padding="5dp"
+    android:id="@+id/connectionTvOrder"
+    android:visibility="gone"/>
+</FrameLayout>

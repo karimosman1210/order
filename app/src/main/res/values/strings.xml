@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Order@</string>
+    <string name="your_string_here">This is an <u>underline</u>.</string>
+    <string name="userName"><font size="12">اسم المستخدم او البريد الالكتروني</font></string>
+    <string name="password"><font size="12">كلمة المرور</font></string>
+    <string name="passText"><u>نسيت كلمة المرور</u></string>
+    <string name="dd"></string>
+    <font color="#919191" size="12">حسب السعر</font>/>
+
+    <!--tablete-->
+    <string name="userNamehint"><font size="16">اسم المستخدم او البريد الالكتروني</font></string>
+    <string name="passwordhint"><font size="16">كلمة المرور</font></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="deleteItem">حذف المنتج</string>
+    <string name="date">التاريخ</string>
+    <string name="total">الاجمالي</string>
+    <string name="amount">الكمية</string>
+    <string name="company">الشركة المنتجة</string>
+    <string name="priceItem">سعر الوحدة</string>
+    <string name="basket">السلة</string>
+    <string name="noitemavilabel">لا يوجد منتجات في هذه الفئه</string>
+    <string name="الرئيسية">الرئيسية</string>
+    <string name="أوردراتي">أوردراتي</string>
+    <string name="orderbarcode">اطلب عن طريق الباركود</string>
+    <string name="البحث">البحث</string>
+    <string name="الكل">الكل</string>
+    <string name="الاسم">الاسم</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="phoneNumber">رقم الهاتف</string>
+    <string name="updatedata">تحديث بياناتي</string>
+    <string name="changePass">تغيير كلمه المرور</string>
+    <string name="amountNeed">الكميه المطلوبة بالوحده</string>
+    <string name="addCart">اضف الي سلة الشراء</string>
+    <string name="تسجيل_الدخول">تسجيل الدخول</string>
+    <string name="closeApp">هل تريد غلق التطبيق</string>
+    <string name="attantion">أنتبه !!!</string>
+    <string name="accept">نعم</string>
+    <string name="reject">لا</string>
+    <string name="reConnect">اعاده الاتصال بالانترنت</string>
+    <string name="editPass">تعديل كلمه المرور</string>
+    <string name="productRadio">المنتجات</string>
+    <string name="companyRadio">الشركات</string>
+    <string name="saveChange">حفظ التغييرات</string>
+    <string name="name">الاسم</string>
+    <string name="OldPassword">كلمه المرور القديمه</string>
+    <string name="newPassword">كلمه المرور الجديدة</string>
+    <string name="ConfermPassword">تاكيد كلمه المرور الجديدة</string>
+    <string name="Byproduct">حسب المنتج</string>
+    <string name="byDate">حسب التاريخ</string>
+    <string name="byCompany">حسب الشركه</string>
+    <string name="byPrice">حسب السعر</string>
+    <string name="basketEmpty">سله المشتريات فارغه</string>
+    <string name="noOrder">لا يوجد اي طلبات</string>
+    <string name="basketIsEmpty">سله المشتريات فارغه</string>
+    <string name="pound">جنية</string>
+    <string name="buyIsDone">تمت عمليه الشراء بنجاح</string>
+    <string name="NoBarcodeChecked">لم يتم فحص اي باركود</string>
+    <string name="ItemIsAdded">تم اضافه المنتج الي السله</string>
+    <string name="fillData">أكمل البيانات</string>
+    <string name="EmailOrPassError">البريد الالكتروني او كلمه المرور خطا</string>
+    <string name="NointernetConnection">لا يوجد انترنت</string>
+    <string name="NoProductInCompany">لا يوجد منتجات متاحه في هذه الشركه الان</string>
+    <string name="no_Internet_Tryagain">لا يوجد اتصال بالانترنت اضغط هنا لإعادة المحاولة</string>
+
+    <string-array name="companyFilter">
+        <item><font color="#808080" size="12">حسب الشركه</font></item>
+        <item><font size="15">بيبسي</font></item>
+        <item><font size="15">جلاكسي</font></item>
+        <item><font size="15">كوكاكولا</font></item>
+        <item><font size="15">سنيكرز</font></item>
+        <item><font size="15">ايديتا</font></item>
+
+    </string-array>
+
+    <string-array name="priceFilter">
+        <item><font color="#919191" size="12">حسب السعر</font></item>
+
+        <!--<item><font size="9"><u>حسب السعر</u></font></item>-->
+        <item><font size="12">1-50</font></item>
+        <item><font size="12">51-100</font></item>
+        <item><font size="12">101-150</font></item>
+        <item><font size="12">150-200</font></item>
+        <item><font size="12">200-More</font></item>
+    </string-array>
+
+    <string-array name="dateFilter">
+        <item><font color="#919191" size="12"> حسب التاريخ </font></item>
+
+        <!--<item><font size="9"><u>حسب السعر</u></font></item>-->
+        <item><font size="15">1-50</font></item>
+
+    </string-array>
+
+    <string-array name="prductFilter">
+        <item><font color="#919191" size="12">حسب المنتج  </font></item>
+
+        <!--<item><font size="9"><u>حسب السعر</u></font></item>-->
+        <item><font size="15">1-50</font></item>
+
+    </string-array>
+</resources>
+    

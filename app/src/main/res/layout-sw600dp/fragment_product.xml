@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gui.products.ProductFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/contact_swipe_refresh_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/prductRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:visibility="gone" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/productProgress"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorAccent"
+        app:SpinKit_Style="Circle" />
+
+    <TextView
+        android:id="@+id/connectionProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/red"
+        android:fontFamily="@font/flat"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/no_Internet_Tryagain"
+        android:textColor="@color/darkwhite"
+        android:textSize="24sp"
+        android:visibility="gone" />
+</FrameLayout>

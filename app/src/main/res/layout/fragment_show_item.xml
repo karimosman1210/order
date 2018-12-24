@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".gui.listproduct.ShowItemFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/item"
+            android:weightSum="100"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="31.8">
+
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/itemSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layoutDirection="rtl"
+                    android:paddingBottom="3dp"
+                    app:defaultQueryHint="search">
+
+                </android.support.v7.widget.SearchView>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="#939393" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/priceSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="29"
+                android:hint="@string/byPrice"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                app:fontFamily="@font/flat"
+                android:textSize="11sp"/>
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/companySPinner2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="29"
+                android:fontFamily="@font/flat"
+                android:hint="@string/byCompany"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                app:fontFamily="@font/flat"
+                android:textSize="11sp"/>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/ripple"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="10"
+                app:mrl_rippleColor="@color/colorAccent">
+
+                <TextView
+                    android:id="@+id/allitemTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/flat"
+                    android:gravity="center"
+                    android:text="@string/الكل"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/itemRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+
+            <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/colorAccent"
+                app:SpinKit_Style="Circle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
